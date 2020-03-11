@@ -10,7 +10,7 @@ Basic features include:
     
 ### Installation
 
-* All necessary tools to run a React 16.3 App
+* All [necessary tools](https://reactjs.org/docs/getting-started.html) to run a React 16.3 App
 * The [salesadmin BFF](https://gitlab.haufedev.systems/myonboarding/my-salesadmin-service) running locally
 * A valid salesadmin user already on your database (ask @castanya or @frutosj)
 * And the usual following steps:
@@ -34,3 +34,5 @@ If you want linting results to be automatically applied, run:
 ```sh
 $ npm run lint:fix
 ```
+
+Anyway, and thanks to [husky](https://github.com/typicode/husky), every time you make a commit, linting (without fix) will be triggered and you'll see the results in your console/terminal.
