@@ -1,35 +1,31 @@
 {
-  "name": "salesadmin",
+  "name": "my-salesadmin-web",
   "version": "0.0.1",
   "description": "Project made for myO stakeholders to manage myOnboarding tenants",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode=production",
+    "clean": "rm -rf dist",
+    "start": "parcel src/index.html",
+    "build-prod": "npm run clean && parcel build src/index.html --public-url ./",
     "lint": "eslint 'src/**/*.{js,jsx}'",
-    "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix"
+    "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Adria Castany <adria.castany@haufe.com>",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.0.2",
-    "css-loader": "^1.0.0",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "husky": "^4.2.3",
-    "style-loader": "^0.23.0",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.10.3"
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
