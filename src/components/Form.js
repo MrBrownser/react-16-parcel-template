@@ -1,36 +1,23 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class Form extends Component {
-  constructor() {
-    super();
+const Form = () => {
 
-    this.state = {
-      value: ''
-    };
+  const { value, setValue } = useState('');
 
-    this.handleChange = this.handleChange.bind(this);
-  }
+  const handleChange = e => {
+    const { value } = e.target;
+    setValue(value);
+  };
 
-  handleChange(event) {
-    const { value } = event.target;
-    this.setState(() => {
-      return {
-        value
-      };
-    });
-  }
-
-  render() {
-    return (
-      <form>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </form>
-    );
-  }
-}
+  return (
+    <form>
+      <input
+        type="text"
+        value={value}
+        onChange={handleChange}
+      />
+    </form>
+  );
+};
 
 export default Form;
