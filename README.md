@@ -7,7 +7,7 @@ Welcome to my React Boilerplate repo!
 * And the usual following steps:
 
 ```sh
-$ git clone https://github.com/MrBrownser/react-16-webpack-boilerplate
+$ git clone https://github.com/MrBrownser/react-16-parcel-template
 $ npm i
 $ npm start
 ```
