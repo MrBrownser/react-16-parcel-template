@@ -1,25 +1,18 @@
-# Sales Admin
-Welcome to the Sales Admin repo!
-
-This project is going to be used by all myO stakeholders in order to create and manage tenants.
-Basic features include:
-* Log in with a special role user "salesadmin" in gorilo
-* List all existing tenants on the running cluster (local, dev, test, prod)
-* Create new tenants, one by one, through a form
-* See and update each tenant's feature flags and limitations
+# React Boilerplate
+Welcome to my React Boilerplate repo!
     
 ### Installation
 
 * All [necessary tools](https://reactjs.org/docs/getting-started.html) to run a React 16.3 App
-* The [salesadmin BFF](https://gitlab.haufedev.systems/myonboarding/my-salesadmin-service) running locally
-* A valid salesadmin user already on your database (ask @castanya or @frutosj)
 * And the usual following steps:
 
 ```sh
-$ git clone https://gitlab.haufedev.systems/myonboarding/my-salesadmin-web
+$ git clone https://github.com/MrBrownser/react-16-webpack-boilerplate
 $ npm i
 $ npm start
 ```
+
+App will be automatically bundled and served from [http://localhost:1234/](http://localhost:1234/)
 
 ### Linting
 
@@ -42,7 +35,7 @@ Anyway, and thanks to [husky](https://github.com/typicode/husky), every time you
 As easy as:
 
 ```sh
-$ npm run build-prod
+$ npm run build
 ```
 
 You will find a freshly created folder dist/ inside the repo folder with all required files.
